@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #e9e5dd;
+    font-family: 'Karla',
+    sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #696464;
+    opacity: 0.6;
+    color: #e9e5dd;
+}
+
+.mu{
+    padding: 10px 30px;
+    color: #e9e5dd;
+    font-size: 24px;
+    text-shadow: -1px 0 1px #d04925,
+    0 1px 1px #d04925,
+    1px 0 1px #d04925,
+    0 -1px 1px #d04925;
+    
+}
+
+a{
+    text-decoration: none;
+}
+.link{
+    color: #e9e5dd;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #d04925;
+    text-shadow: -1px 0 #e9e5dd,
+    0 1px #e9e5dd,
+    1px 0 #e9e5dd,
+    0 -1px #e9e5dd;
+    font-weight: bold;
+   
+}
+li{
+    float: left;
+    display: inline;
+    list-style-type: none;
+    letter-spacing: 1px;
+    
+    padding: 10px 15px;
+    border-bottom: 2px solid #d04925;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+.left{
+    text-align: center;
+    color: #696464;
+   
+}
+h1{
+    font-family: 'Orelega One',
+    cursive;
+    font-size: 60px;
+}
+.animate__animated {
+    animation-delay: 1s;
+    animation-duration: 4s;
+}
+
+img{
+    max-width: 50%;
+    margin-top: -200px;
+    padding-left: -120px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 2px solid #d04925;
+    
+}
+
+.btn{
+    border-bottom: 2px solid #d04925;
+    width: 150px;
+    height: 50px;     
+}
+
+#btn{
+    margin-top: 40px;
+    padding: 40px 0;
+}
+
+a.btn {
+    color: #696464;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 10px;
+}
+
+.btn:hover{
+    background-color: #d04925;
+    color: #e9e5dd;
+    transition: 1.5s;
+    border-radius: 2.5em;
+}
+
+@media (max-width: 768px){
+    .box{
+        display: block;
+    }
+    img{
+        margin-top: auto;
+        max-width: 50%;
+    }
+    #btn{
+        margin: auto;
+    }
+    .btn:focus {
+    background-color: #d04925;
+    color: #e9e5dd;
+    transition: 1.5s;
+    border-radius: 2.5em;
+    }
+
+}
+@media (min-width:769px), (max-width: 1280px){
+    img {
+        margin-top: auto;
+        
+    }
+}
